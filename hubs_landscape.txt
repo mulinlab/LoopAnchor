@@ -1,8 +1,8 @@
-hub LoopAnchor
-shortLabel Loops-LoopAnchor
-longLabel Loops detected by LoopAnchor
+hub LoopAnchorLandscape
+shortLabel Loops-LoopAnchor-Landscape
+longLabel Loops detected by LoopAnchor for landscape samples
 useOneFile on
-email mulinlab@gmail.com
+email mulinli@connect.hku.hk
 
 genome hg19
 
