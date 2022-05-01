@@ -58,6 +58,7 @@ python DeepAnchor_input.py work_dir
 
 
 It will generate an output folder named DeepAnchor in work_dir:
+```
 work_dir
     └── DeepAnchor  
         ├── total_anchors.bed        # all anchors extracted from loop.bedpe
@@ -67,7 +68,7 @@ work_dir
         ├── valid.npz                # valid set (chr17-18)
         ├── test.npz                 # test set (chr19-X)                 
         └── total.npz                # feature data for all CBSs
-        
+```     
 
 
 ## 3. Run DeepAnchor
