@@ -109,10 +109,10 @@ Run command:
 ```properties
 python run_LoopAnchor_denovo.py  work_dir
 ```
-In work_dir/LoopAnchor folder, you can find the result LoopAnchor_pred.bedpe which contains all the loops predicted by LoopAnchor.LoopAnchor files is arranged in bedpe format and the last column is the predicted loop intensity.
+In work_dir/LoopAnchor folder, you can find the result LoopAnchor_pred.bedpe which contains all the loops predicted by LoopAnchor. Result is arranged in bedpe format and the last column is the predicted loop intensity.
 
-|chrom1|start1|end1|chrom2|start2|end2|name|score|strand1|strand2|LoopAnchor|
-|------|------|----|------|------|----|----|-----|-------|-------|----------|
+|chrom1|start1|end1|chrom2|start2|end2|name|score|strand1|strand2|Score|
+|------|------|----|------|------|----|----|-----|-------|-------|-----|
 
 
 
