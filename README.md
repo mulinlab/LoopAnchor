@@ -89,10 +89,10 @@ python DeepAnchor.py  work_dir predict
 This will generate a file *scored_motif.tsv* that contain all CBSs and their DeepAnchor score. We need to copy this file to ./data/ folder for downstream analyses.
 
 The data columns of *scored_motif.tsv* are shown below:
-|chrom|start|end|strand|score|anchor_score|
-|-----|-----|---|------|-----|------------|
+|chrom|start|end|strand|motif_score|anchor_score|
+|-----|-----|---|------|-----------|------------|
 
-*score*: the score for motif scan.
+*motif_score*: the score from motif scanning.
 *anchor_score*: the score predicted by DeepAnchor model.
 
 ## 4. Run LoopAnchor to make loop prediction
@@ -111,7 +111,7 @@ python run_LoopAnchor_denovo.py  work_dir
 ```
 In work_dir/LoopAnchor folder, you can find the result LoopAnchor_pred.bedpe which contains all the loops predicted by LoopAnchor. Result is arranged in bedpe format and the last column is the predicted loop intensity.
 
-|chrom1|start1|end1|chrom2|start2|end2|name|score|strand1|strand2|Score|
+|chrom1|start1|end1|chrom2|start2|end2|name|score|strand1|strand2|score|
 |------|------|----|------|------|----|----|-----|-------|-------|-----|
 
 
