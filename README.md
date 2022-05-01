@@ -1,6 +1,6 @@
-# DoopAnchor
+# LoopAnchor
 
-CTCF is the most important Transcription Factor(TF) for genomic insulation in vertebrate. But it is also a versatile TF that plays several other roles in transcriptional regulation. Here we present DeepAnchor to provide precise description of the genomic/epigenomic patterns surrounding insulation-related CTCF binding sites(CBSs). Generally, DeepAnchor usees cohesin ChIA-PET data, CTCF ChIP-seq data and CBSs predicted by motif scan as input, to train a classifier to distinguish insulation-related CBSs from others. DeepAnchor then calculates a score ranged from [0, 1] for all CBSs, with a larger value meaning more likely to be a positive CTCF insulator.
+CTCF is the most important Transcription Factor (TF) for genomic insulation in vertebrate. But it is also a versatile TF that plays several other roles in transcriptional regulation. Here we present DeepAnchor to provide precise description of the genomic/epigenomic patterns surrounding insulation-related CTCF binding sites (CBSs). Generally, DeepAnchor usees cohesin ChIA-PET data, CTCF ChIP-seq data and CBSs predicted by motif scan as input, to train a classifier to distinguish insulation-related CBSs from others. DeepAnchor then calculates a score ranged from [0, 1] for all CBSs, with a larger value meaning more likely to be a positive CTCF insulator.
 
 
 ## Prepare data
@@ -86,16 +86,14 @@ To predict the DeepAnchor score for all CBSs, run command:
 python DeepAnchor.py  work_dir predict
 ```
 
-This will generate a file *scored_motif.tsv* that contain all CBSs and their DeepAnchor score. We need to copy this file to ./data/ folder for downstream analyses. 
+This will generate a file *scored_motif.tsv* that contain all CBSs and their DeepAnchor score. We need to copy this file to ./data/ folder for downstream analyses.
 
-The data columns of *scored_motif.tsv' are shown below:
-
+The data columns of *scored_motif.tsv* are shown below:
 |chrom|start|end|strand|score|anchor_score|
 |-----|-----|---|------|-----|------------|
 
 *score*: the score for motif scan.
 *anchor_score*: the score predicted by DeepAnchor model.
-
 
 ## 4. Run LoopAnchor to make loop prediction
 
@@ -111,10 +109,12 @@ Run command:
 ```properties
 python run_LoopAnchor_denovo.py  work_dir
 ```
-In work_dir/LoopAnchor folder, you can find the result LoopAnchor_pred.bedpe which contains all the loops predicted by LoopAnchor. LoopAnchor files is arranged in bedpe format and the last column is the predicted loop intensity.
+In work_dir/LoopAnchor folder, you can find the result LoopAnchor_pred.bedpe which contains all the loops predicted by LoopAnchor.LoopAnchor files is arranged in bedpe format and the last column is the predicted loop intensity.
 
 |chrom1|start1|end1|chrom2|start2|end2|name|score|strand1|strand2|LoopAnchor|
 |------|------|----|------|------|----|----|-----|-------|-------|----------|
+
+
 
 
 
@@ -127,5 +127,5 @@ python run_LoopAnchor_denovo.py ./data/K562
 ```
 
 
-## Landscape analyses
-We collected all available CTCF ChIP-seq data from ENCODE, CistromDB and ChIP-Atlas and use LoopAnchor to predict CTCF-anchored loops. The results are available at UCSC Track Data Hubs (https://genome.ucsc.edu/cgi-bin/hgHubConnect) by entering customized hub URLs https://raw.githubusercontent.com/mulinlab/LoopAnchor/master/hubs_landscape.txt or https://raw.githubusercontent.com/mulinlab/LoopAnchor/master/hubs_all.txt, respectively.
+## Landscape availability
+We collected 764 available CTCF ChIP-seq data from ENCODE, CistromDB and ChIP-Atlas and use LoopAnchor to predict CTCF-anchored loops. The results are available at UCSC Track Data Hubs (https://genome.ucsc.edu/cgi-bin/hgHubConnect) by entering customized hub URLs https://raw.githubusercontent.com/mulinlab/LoopAnchor/master/hubs_landscape.txt or https://raw.githubusercontent.com/mulinlab/LoopAnchor/master/hubs_all.txt, respectively.
