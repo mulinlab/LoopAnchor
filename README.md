@@ -11,7 +11,7 @@ CCCTC-binding factor (CTCF) is a transcription regulator which is involved in ma
 ## Prepare data
 To implement DeepAnchor, one should prepare four types of data:
 1. Obtain CBSs by motif scan.
-2. Download base-wise genomic/epigenomic features from [CADD v1.4](https://cadd.gs.washington.edu/download). Here we also provide preprocessed CADD features for CTCF binding sites.
+2. Download base-wise genomic/epigenomic features from [CADD v1.3](https://cadd.gs.washington.edu/download). Here we also provide preprocessed CADD features for CTCF binding sites.
 3. CTCF ChIP-seq data for specific cell type (for example GM12878).
 4. Cohesin ChIA-PET data for the same cell type. 
 
