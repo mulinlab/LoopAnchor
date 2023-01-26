@@ -5,7 +5,7 @@ CCCTC-binding factor (CTCF) is a transcription regulator which is involved in ma
 
 
 <p align="center">
-   <img src="https://github.com/Xuhang01/LoopAnchor/blob/main/docs/source/flowchart.PNG?raw=True">
+   <img src="https://github.com/mulinlab/LoopAnchor/blob/master/docs/source/flowchart.PNG?raw=True">
 </p>
 
 ## Prepare data
@@ -145,5 +145,10 @@ python run_LoopAnchor_denovo.py ./data/K562
 
 Considering that github may be not available in some regions, we also provide [ReadTheDocs](https://loopanchor.readthedocs.io/en/latest/index.html) and [Bitbuket](https://bitbucket.org/xuhang01/loopanchor/src/main/) resource for LoopAnchor method.
 
+
 ## Landscape availability
 We collected 764 available CTCF ChIP-seq data from ENCODE, CistromDB and ChIP-Atlas and use LoopAnchor to predict CTCF-anchored loops. The results are available at UCSC Track Data Hubs (https://genome.ucsc.edu/cgi-bin/hgHubConnect) by entering customized hub URLs https://raw.githubusercontent.com/mulinlab/LoopAnchor/master/hubs_landscape.txt or https://raw.githubusercontent.com/mulinlab/LoopAnchor/master/hubs_all.txt, respectively.
+
+
+## Citation
+Xu, Hang, et al. "Inferring CTCF insulators and anchored loops across human tissues and cell types." bioRxiv (2022).
