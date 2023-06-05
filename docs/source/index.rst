@@ -13,7 +13,7 @@ LoopAnchor – Inferring CTCF insulators and anchored loops across human tissues
    :maxdepth: 1
    
    Pipeline
-   
+   three_type_CBSs
 
 .. image:: ./flowchart.PNG
    :width: 1400
