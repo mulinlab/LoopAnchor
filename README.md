@@ -71,7 +71,7 @@ python ./pp/loop_to_bed.py file_loop target_bed
 ```
 
 
-It will generate an output folder named DeepAnchor in work_dir:
+DeepAnchr_input.py will generate an output folder named DeepAnchor in work_dir:
 ```
 work_dir
     └── DeepAnchor  
